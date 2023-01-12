@@ -1,61 +1,105 @@
 .top_navigation {
   position: absolute;
-  width: 1440px;
-  height: 72px;
+  width: 100vw;
+  height: 12vh;
   left: 0;
   top: 0;
-  border: 2px solid red;
+  border: 1px solid red;
 }
 
 .item_navigation {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
   padding: 0;
-  gap: 8px;
   position: absolute;
-  width: 255px;
-  height: 40px;
-  left: 591px;
-  top: 16px;
-  border: 2px solid blue;
+  width: 30.5vw;
+  height: 8vh;
+  left: 35vw;
+  top: 2vh;
+  border: 1px solid blue;
+  margin: 0;
 }
 
-.item_one {
+.item_navigation > li > a {
+  text-decoration: none;
+}
+
+.item {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 10px 12px;
+  padding: 0.2vh 1vw;
   gap: 10px;
-  width: 87px;
-  height: 40px;
+  width: 8vw;
+  height: 8vh;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0;
+  border: 1px solid red;
+}
+
+.frame {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #344563;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
-.item_two {
+.headline {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  padding: 10px 12px;
-  gap: 10px;
-  width: 69px;
-  height: 40px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+  padding: 160px 0;
+  gap: 24px;
+  position: absolute;
+  width: 920px;
+  height: 756px;
+  left: 260px;
+  top: 72px;
+  border: 1px solid red;
 }
 
-.item_three {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 10px 12px;
-  gap: 10px;
-  width: 83px;
-  height: 40px;
+.primary {
+  width: 920px;
+  height: 114px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.37px;
+  color: #172b4d;
   flex: none;
-  order: 2;
+  order: 0;
   flex-grow: 0;
+}
+.supportingtext{
+    width: 920px;
+height: 96px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 32px;
+
+text-align: center;
+
+
+color: #172B4D;
+
+
+flex: none;
+order: 1;
+flex-grow: 0;
 }
