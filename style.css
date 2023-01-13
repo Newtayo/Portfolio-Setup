@@ -25,7 +25,6 @@
     flex-direction: column;
   }
 
-
   .nameplateicons {
     margin-left: 65vw;
     gap: 3px;
@@ -97,8 +96,6 @@
     flex-grow: 0;
   }
 
-
-
   h3 {
     width: 327px;
     height: 123px;
@@ -108,10 +105,6 @@
     line-height: 24px;
     color: #fff;
   }
-
-
-
-
 
   section {
     background: #1c1a19;
