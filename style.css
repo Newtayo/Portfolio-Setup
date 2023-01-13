@@ -1,0 +1,171 @@
+@media (min-width: 250px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: #1c1a19;
+    font-family: 'Crete Round', serif;
+  }
+
+  header {
+    width: 100%;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #3c3a39;
+  }
+
+  .porfolio_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nameplateicons {
+    margin-left: 65vw;
+    gap: 3px;
+    width: 5vw;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .dropdown {
+    background: transparent;
+    border: none;
+  }
+
+  .dropdown:hover {
+    cursor: pointer;
+  }
+
+  .text {
+    color: #fff;
+    text-decoration: none;
+    width: 30vw;
+    white-space: nowrap;
+    margin-left: 6%;
+  }
+
+  .header_navigation {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .item_navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    background: #3c3a39;
+    padding: auto auto;
+    margin: auto 0;
+  }
+
+  .primary {
+    height: 124px;
+    margin-left: 5%;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 0.37px;
+    color: #ff6b00;
+    width: 80vw;
+  }
+
+  .role {
+    width: 90vw;
+    height: 27px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #fff5e1;
+    flex: none;
+    margin: auto;
+    flex-grow: 0;
+  }
+
+  h3 {
+    width: 327px;
+    height: 123px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+  }
+
+  section {
+    background: #1c1a19;
+    width: 100%;
+    height: 90vh;
+    background-image: url("image/illustration-header-mobile.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+
+  .headline {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .union {
+    flex: 1;
+    list-style: none;
+  }
+
+  .item {
+    width: 5vw;
+    height: 10vh;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    flex: 5;
+  }
+
+  .social_header_navigation {
+    width: 60vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 6%;
+    margin-top: -5%;
+  }
+
+  .social_navigation {
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
+
+  .supportingtext {
+    width: 90vw;
+    height: 123px;
+    margin: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    color: #fff;
+  }
+}
