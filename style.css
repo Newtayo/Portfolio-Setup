@@ -168,4 +168,153 @@
     text-align: left;
     color: #fff;
   }
+
+  .worksection {
+    width: 100vw;
+    height: 610vh;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    border: 2px solid blue;
+  }
+
+  #worksectionheading {
+    width: 90vw;
+    height: 50vh;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    color: #1c1a19;
+  }
+
+  #sectiondivider {
+    width: 90vw;
+    margin: -30% 0;
+  }
+
+  .workdescription {
+    width: 100%;
+    height: 80vh;
+    border: 2px solid red;
+    background-color: white;
+    background-image: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #worksectionheader {
+    width: 100%;
+    height: 50vh;
+    justify-content: center;
+    background-color: white;
+    background-image: none;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+
+  #project1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  #placeholder {
+    width: 90%;
+    height: 40vh;
+    margin: 0 auto;
+  }
+
+  #project1text {
+    width: 90%;
+    height: 5vh;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 44px;
+    margin: 1.5vh auto 0 auto;
+    display: flex;
+    align-items: center;
+    color: #091e42;
+  }
+
+  #project1supporttext {
+    width: 90%;
+    height: 20vh;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #091e42;
+    margin: 1.5vh auto 0 auto;
+  }
+
+  #project1language {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    list-style: none;
+    gap: 1%;
+    width: 90%;
+    margin: 1.5vh  auto 0 auto;
+  }
+
+  .languageitem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #8993a4;
+    width: 14vw;
+    height: 5vh;
+    justify-content: center;
+  }
+
+  #bootstrap {
+    width: 24vw;
+  }
+
+  #seeproject1 {
+    height: 6vh;
+    width: 34vw;
+    background-color: #ff6b00;
+    margin: 1.5vh 58vw 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    color: #fff;
+    border: none;
+  }
+
+  .otherproject {
+    width: 90vw;
+    height: 75vh;
+    margin: 2.5vh auto;
+    background-image: url("image/Img\ Placeholder\ \(3\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 16vh;
+  }
+
+  .otherprojectheading {
+    width: 80vw;
+    height: 15vh;
+    border: 2px solid red;
+    font-weight: 400;
+    margin: 0 auto;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff;
+  }
 }
