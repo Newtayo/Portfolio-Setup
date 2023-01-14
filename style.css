@@ -305,16 +305,209 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 16vh;
+    display: flex;
+    flex-direction: column;
   }
 
   .otherprojectheading {
     width: 80vw;
     height: 15vh;
-    border: 2px solid red;
     font-weight: 400;
     margin: 0 auto;
     font-size: 32px;
     line-height: 44px;
     color: #fff;
+  }
+
+  .otherprojecttext {
+    width: 80vw;
+    height: 20vh;
+    margin: 2vh auto 0 auto;
+    color: #fff;
+    font-family: 'Crete Round', serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+  }
+
+  #project2language {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    list-style: none;
+    gap: 1%;
+    width: 80%;
+    height: 10vh;
+    margin: 1.5vh  auto 0 5vw;
+    align-items: center;
+  }
+
+  .seeproject2 {
+    height: 10vh;
+    width: 90vw;
+    background-color: #ff6b00;
+    margin: 1.5vh  auto 0 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    color: #fff;
+    border: none;
+  }
+
+  .language2item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 14vw;
+    height: 5vh;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    background: rgba(255, 255, 255, 0.24);
+  }
+
+  .about {
+    width: 100%;
+    height: 100vh;
+    background-color: #1c1a19;
+    display: flex;
+    flex-direction: column;
+    background-image: url("image/illustration-about-me-mobile.png");
+  }
+
+  .aboutheader {
+    width: 90vw;
+    height: 16vh;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 88px;
+    color: #ff6b00;
+    margin: 20vh auto 0 auto;
+    letter-spacing: 0.37px;
+  }
+
+  .aboutsection {
+    width: 100%;
+    height: 320vh;
+    background: #1c1a19;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    border: 2px solid red;
+  }
+
+  #aboutmetext {
+    width: 90vw;
+    height: 22vh;
+    margin: 2.5vh auto 0 auto;
+    padding: 0.5vh;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #f4f5f7;
+  }
+
+  #getresumebutton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    gap: 10px;
+    background: #ff6b00;
+    width: 45vw;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #fff;
+    margin: 2vh 0 auto 5vw;
+  }
+
+  .language {
+    background-image: url("image/Vector\ 4.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: #1c1a19;
+  }
+
+  .lang {
+    color: white;
+    width: 70vw;
+    align-content: center;
+    justify-content: center;
+    margin: 20vh auto 0 auto;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+  }
+
+  .skilllist {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 150vh;
+  }
+
+  #first::before {
+    content: url("image/Rectangle\ 55.png");
+    margin-left: 2vw;
+  }
+
+  #first::after {
+    margin-left: 10vw;
+  }
+
+  #second::before {
+    content: url("image/Rectangle\ 56\ \(1\).png");
+    padding-left: 5vw;
+  }
+
+  #third::before {
+    content: url("image/Rectangle\ 57.png");
+    padding-left: 2vw;
+  }
+
+  .listitem {
+    width: 50%;
+    height: 60vh;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #first {
+    margin-top: 15vh;
+  }
+
+  .list {
+    text-align: center;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 43px;
+    color: #fff;
+    padding-top: 5vh;
+  }
+
+  #second {
+    margin-top: 7vh;
+  }
+
+  #third {
+    margin-top: 7vh;
   }
 }
