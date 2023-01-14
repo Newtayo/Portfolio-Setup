@@ -106,7 +106,7 @@
     color: #fff;
   }
 
-  section {
+  .head {
     background: #1c1a19;
     width: 100%;
     height: 90vh;
@@ -171,7 +171,7 @@
 
   .worksection {
     width: 100vw;
-    height: 610vh;
+    height: 600%;
     background-color: #fff;
     display: grid;
     grid-template-columns: 100%;
@@ -179,12 +179,9 @@
     margin: 0;
     padding: 0;
     gap: 0;
-    border: 2px solid blue;
   }
 
   #worksectionheading {
-    width: 90vw;
-    height: 50vh;
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -192,17 +189,20 @@
     display: flex;
     align-items: center;
     color: #1c1a19;
+    grid-row: 1/5;
+    padding-top: 30%;
   }
 
-  #sectiondivider {
-    width: 90vw;
-    margin: -30% 0;
+  hr {
+    height: 1px;
+    border-width: 0;
+    color: gray;
+    background-color: gray;
   }
 
   .workdescription {
     width: 100%;
-    height: 80vh;
-    border: 2px solid red;
+    height: 100%;
     background-color: white;
     background-image: none;
     padding: 0;
@@ -211,13 +211,13 @@
 
   #worksectionheader {
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     justify-content: center;
     background-color: white;
     background-image: none;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
   }
 
   #project1 {
@@ -225,23 +225,21 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0;
+    align-items: flex-start;
+    padding: 5%;
+    gap: 3%;
   }
 
   #placeholder {
-    width: 90%;
-    height: 40vh;
-    margin: 0 auto;
+    width: 100%;
   }
 
   #project1text {
     width: 90%;
-    height: 5vh;
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
     line-height: 44px;
-    margin: 1.5vh auto 0 auto;
     display: flex;
     align-items: center;
     color: #091e42;
@@ -249,21 +247,18 @@
 
   #project1supporttext {
     width: 90%;
-    height: 20vh;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
     color: #091e42;
-    margin: 1.5vh auto 0 auto;
   }
 
   #project1language {
     display: grid;
     grid-template-columns: auto auto auto auto;
     list-style: none;
-    gap: 1%;
-    width: 90%;
-    margin: 1.5vh  auto 0 auto;
+    gap: 4%;
+    width: 70%;
   }
 
   .languageitem {
@@ -272,7 +267,11 @@
     align-items: center;
     border: 1px solid #8993a4;
     width: 14vw;
-    height: 5vh;
+    height: 100%;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10%;
     justify-content: center;
   }
 
@@ -281,10 +280,11 @@
   }
 
   #seeproject1 {
-    height: 6vh;
-    width: 34vw;
+    margin-top: 3%;
+    width: 34%;
+    padding: 3%;
     background-color: #ff6b00;
-    margin: 1.5vh 58vw 0 auto;
+    white-space: nowrap;
     display: flex;
     align-items: center;
     text-align: center;
@@ -375,39 +375,39 @@
 
   .about {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background-color: #1c1a19;
     display: flex;
     flex-direction: column;
     background-image: url("image/illustration-about-me-mobile.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding: 5%;
+    align-items: flex-start;
   }
 
   .aboutheader {
     width: 90vw;
-    height: 16vh;
     font-weight: 400;
     font-size: 72px;
     line-height: 88px;
     color: #ff6b00;
-    margin: 20vh auto 0 auto;
+    padding-top: 30%;
     letter-spacing: 0.37px;
   }
 
   .aboutsection {
     width: 100%;
-    height: 320vh;
+    height: 100%;
     background: #1c1a19;
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
-    border: 2px solid red;
   }
 
   #aboutmetext {
     width: 90vw;
-    height: 22vh;
-    margin: 2.5vh auto 0 auto;
     padding: 0.5vh;
     font-weight: 400;
     font-size: 16px;
@@ -428,14 +428,7 @@
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #fff;
-    margin: 2vh 0 auto 5vw;
-  }
-
-  .language {
-    background-image: url("image/Vector\ 4.png");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-color: #1c1a19;
+    border: none;
   }
 
   .lang {
@@ -483,7 +476,7 @@
   .listitem {
     width: 50%;
     height: 60vh;
-    margin: 0 auto;
+    margin: 0 auto 5% auto;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -500,7 +493,8 @@
     font-size: 22px;
     line-height: 43px;
     color: #fff;
-    padding-top: 5vh;
+    padding-top: 5%;
+    padding-bottom: 10%;
   }
 
   #second {
@@ -509,5 +503,11 @@
 
   #third {
     margin-top: 7vh;
+  }
+
+  .divider {
+    width: 90%;
+    margin: auto;
+    border: 0.5px thin #fff;
   }
 }
