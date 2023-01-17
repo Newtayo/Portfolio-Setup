@@ -169,15 +169,20 @@ This feature is yet to be added
 
 > Describe 1 - 3 features you will add to the project.
 
--  Header and Footer will be added to the index .html file
+
 -  The desktop version of the portfolio website would be created
--  The project would be deployed on live server
+-  The project would be deployed on live server.
+-  More Project sections would be added.
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 ## 🤝 Contributing <a name="contributing"></a>
+
+Hedlrick adholah
 
 Contributions, issues, and feature requests are welcome!
 
@@ -199,7 +204,7 @@ Feel free to check the [issues page](../../issues/).
 
 
 
-I would like to thank Microverse Team for this opportunity. I also want to acknowledge the support I receiver from my learning partner santoosh. My code reviewers have also been fantastic with the feedback they have provided me with.
+I would like to thank Microverse Team for this opportunity. I also want to acknowledge the support of my learning heldricks. Who were modified this website together. My code reviewers have also been fantastic with the feedback they have provided me with.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
