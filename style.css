@@ -520,4 +520,14 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
+  .footer{
+    height: 30vh;
+    border: 2px solid blue;
+  }
+  .footer .liner{
+      height: 4px;
+      width: 145px;
+      background-color: white;
+      margin: 0 auto;
+  }
 }
