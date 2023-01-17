@@ -6,7 +6,6 @@
   }
 
   body {
-    background: #1c1a19;
     font-family: 'Crete Round', serif;
   }
 
@@ -384,7 +383,7 @@
     background-position: right bottom;
     padding: 5%;
     align-items: flex-start;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 
   .aboutheader {
@@ -410,7 +409,7 @@
 
   #aboutmetext {
     width: 90vw;
-    padding: 0.5vh;
+    padding-bottom: 5%;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -516,77 +515,76 @@
   }
 
   .contact-form {
-    height: 100vh;
-  
+    padding-bottom: 10%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: white
+    background-color: white;
+    margin-bottom: 17%;
   }
 
   .footer {
-    height: 30vh;
-    border: 2px solid blue;
+    background-color: white;
+    padding-bottom: 2%;
+  }
+
+  .footer .item {
+    color: #505f79;
   }
 
   .footer .liner {
     height: 4px;
     width: 145px;
-    background-color: white;
     margin: 0 auto;
+    background: #0d151e;
+    border-radius: 10px;
   }
 
- 
-
-  .contact-form h2 {
+  .contact-form p {
     font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
-    text-align: center;
     color: #172b4d;
     width: 90vw;
     margin: 20% auto 10% auto;
     text-align: center;
+    flex: 1;
   }
 
-  .form_details{
-   
-    height: fit-content;
-    
-   }
+  .form_details {
+    display: flex;
+    flex-direction: column;
+  }
 
-   input{
+  input {
     width: 90%;
     padding: 2%;
     margin: 3%;
     border: 0;
-    border-bottom: 2px solid #DBD8D7;;
-    
+    border-bottom: 2px solid #dbd8d7;
+  }
 
-   }
-   textarea{
+  textarea {
     width: 90%;
-    margin: 3%;
-    
-    background-color: #DBD8D7;
-   }
+    margin: 3% auto 5% auto;
+    border: none;
+    background-color: #fbf8f7;
+  }
 
-   .btn{
+  .btn {
     align-items: center;
-      width:35%;
-      margin-left: 30%;
-      height: 15%;
-      
+    width: 35%;
+    margin: auto;
+    height: 8vh;
+    color: #fff;
+    border: none;
+    background: #ff6b00;
+  }
 
-
-
-
-
-
-background: #FF6B00;
-   }
-
-  
+  .btn:hover {
+    border: 2px solid red;
+    cursor: pointer;
+  }
 }
