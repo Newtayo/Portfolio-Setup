@@ -540,6 +540,25 @@
     border-radius: 10px;
   }
 
+  button {
+    transition: all 1s ease;
+  }
+
+  button:enabled{
+    background: #F55800;
+  }
+  button:hover{
+    background: #FFF5E1;
+    border: 1px solid #F55800;
+    cursor: pointer;
+    transform: scale(1.1);  
+  }
+  button:active{
+    background: #E05304;
+  }
+  button:disabled{
+    background: #F4F1F0;
+  }
   .contact-form p {
     font-family: 'Inter', serif;
     font-style: normal;
@@ -583,8 +602,5 @@
     background: #ff6b00;
   }
 
-  .btn:hover {
-    border: 2px solid red;
-    cursor: pointer;
-  }
+  
 }
