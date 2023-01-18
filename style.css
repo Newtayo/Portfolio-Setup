@@ -544,21 +544,25 @@
     transition: all 1s ease;
   }
 
-  button:enabled{
-    background: #F55800;
+  button:enabled {
+    background: #f55800;
   }
-  button:hover{
-    background: #FFF5E1;
-    border: 1px solid #F55800;
+
+  button:hover {
+    background: #fff5e1;
+    border: 1px solid #f55800;
     cursor: pointer;
-    transform: scale(1.1);  
+    transform: scale(1.1);
   }
-  button:active{
-    background: #E05304;
+
+  button:active {
+    background: #e05304;
   }
-  button:disabled{
-    background: #F4F1F0;
+
+  button:disabled {
+    background: #f4f1f0;
   }
+
   .contact-form p {
     font-family: 'Inter', serif;
     font-style: normal;
@@ -601,6 +605,4 @@
     border: none;
     background: #ff6b00;
   }
-
-  
 }
