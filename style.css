@@ -1013,7 +1013,11 @@ textarea {
     flex-direction: column;
     width: 30vw;
   }
-
+    .listitem{
+      justify-content: flex-start;
+    align-items: flex-start;
+    
+    }
   .skilllist {
     display: flex;
     flex-direction: row;
@@ -1039,10 +1043,21 @@ textarea {
     flex: 1;
     margin-top: -1.3%;
     font-size: 2.5vw;
+    text-align: left;
+  }
+
+  #text-transition{
+      transition: all 1s ease-in;
+    
+  }
+
+  #text-transition:hover{
+     color: #e05304;
+
   }
 
   .contact-form form {
-    flex: 3;
+    flex: 2;
   }
 
   .social_navigation.desk {
@@ -1053,5 +1068,12 @@ textarea {
 
   .liner {
     display: none;
+  }
+
+  #third{
+    margin-left: 10vw;
+  }
+  .list{
+    padding-bottom: 5%;
   }
 }
