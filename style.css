@@ -1076,4 +1076,20 @@ textarea {
   .list{
     padding-bottom: 5%;
   }
+  #animation{
+    animation-duration: 2s;
+    animation-name: upDown;
+    animation-direction: reverse;
+
+  }
+  @keyframes upDown {
+    from{
+      margin-top: 0%;
+
+    }
+    to{
+      margin-top: 10%;
+    }
+    
+  }
 }
