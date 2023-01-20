@@ -501,7 +501,6 @@ hr {
   list-style: none;
   display: flex;
   flex-direction: column;
- 
 }
 
 #first {
@@ -652,6 +651,9 @@ textarea {
   .desktoptext {
     color: #fff;
     text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
   }
 
   #mail {
@@ -719,16 +721,19 @@ textarea {
     width: 100%;
     margin: 0;
     font-size: 2.5vw;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
   }
 
   .supportingtext {
     width: 100%;
     margin: 0;
     padding-top: 3%;
-    font-style: normal;
     font-weight: 400;
     font-size: 1.9vw;
     line-height: 32px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
   }
 
   .desktopproject1 {
@@ -774,6 +779,12 @@ textarea {
     width: 100%;
   }
 
+  .text {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+  }
+
   #placeholder {
     width: 50%;
     padding: 0;
@@ -809,6 +820,10 @@ textarea {
     width: 80%;
     padding-bottom: auto;
     font-size: 1.3vw;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    color: #091e42;
+    font-weight: 600;
   }
 
   #project1text {
@@ -914,6 +929,8 @@ textarea {
     font-weight: 150;
     font-size: 1.3vw;
     line-height: 24px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
   }
 
   .dashboardlanguage {
@@ -941,6 +958,8 @@ textarea {
     font-size: 1.2vw;
     line-height: 20px;
     background-color: #5b5957;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
   }
 
   .dashboardheading.web {
@@ -952,6 +971,8 @@ textarea {
 
   .dashboardtext.web {
     padding-bottom: 2.5%;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
   }
 
   .dashboard.web {
@@ -996,6 +1017,8 @@ textarea {
     font-size: 1.5vw;
     line-height: 24px;
     color: #f4f5f7;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
   }
 
   .getresumebutton {
@@ -1017,11 +1040,16 @@ textarea {
   .skilllist {
     display: flex;
     flex-direction: row;
+    padding-left: 2.5%;
+    margin: 0;
   }
 
   .lang {
     width: 10%;
     font-size: 3vw;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
   }
 
   .lang#first {
@@ -1038,8 +1066,11 @@ textarea {
   .contact-form p {
     flex: 1;
     margin-top: -1.3%;
-    font-size: 2.5vw;
+    font-size: 2.3vw;
     text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
   }
 
   .contact-form form {
@@ -1057,23 +1088,17 @@ textarea {
     display: none;
   }
 
-  .listitem{
+  .listitem {
     align-items: flex-start;
-    
   }
 
-  #third{
+  #third {
     margin-left: 32%;
   }
 
-  .list{
+  .list {
     padding-bottom: 2%;
-  }
-
-  .skilllist{
-
-    border: 2px red solid;
-    padding-left:  2.5%;
-    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
   }
 }
