@@ -88,7 +88,7 @@ This is a portfolio website designed to showcase my experiences. The website is 
 
 
 
- <img src="image/Website snapshot.jpg" alt="logo" width="140"  height="auto" />
+  https://newtayo.github.io/Portfolio-Setup/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -133,15 +133,15 @@ Install this project with:
 
 To run the project, execute the following command:
 
-This project is still in development 
+ https://newtayo.github.io/Portfolio-Setup/
 
 ### Run tests
 
-This feature is yet to be added
+This website has been completed and deployed
 
 ### Deployment
 
-This feature is yet to be added
+ https://newtayo.github.io/Portfolio-Setup/
 
 
 
@@ -171,7 +171,6 @@ This feature is yet to be added
 
 
 -  The desktop version of the portfolio website would be created
--  The project would be deployed on live server.
 -  More Project sections would be added.
 
 
@@ -218,7 +217,7 @@ I would like to thank Microverse Team for this opportunity. I also want to ackno
 
   - Ensure you have node.js installed on your computer
 
-- Can clone repository using vscode
+- Can I clone repository using vscode
 
   - Ensure you are signed to your github account on vscode
 
