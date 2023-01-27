@@ -89,6 +89,8 @@ This is a portfolio website designed to showcase my experiences. The website is 
 
 
   https://newtayo.github.io/Portfolio-Setup/
+  
+  Click here to see video https://www.loom.com/share/daca1b540b3246e9872cc21609aa1d6d
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
