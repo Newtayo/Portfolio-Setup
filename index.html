@@ -35,12 +35,22 @@
           <li class ="desktopitem" id="mail"> <a href=""><img src="image/Icon - Mail.png" /></a></li>
           <li class="union">
             <button class="dropdown" type="submit">
-              <img src="image/Union.png" />
+              <img src="image/Union.png"  class= "immage"/>
             </button>
           </li>
         </ul>
       </nav>
     </header>
+   <div class="mobileMenu">
+    <ul >
+          <li><a class="menu-items" href="#work-link"> Portfolio</a> </li>
+          <hr class ="line">
+          <li> <a class="menu-items" href="#about-link"> About</a></li>
+          <hr class ="line">
+          <li> <a class="menu-items" href="#contact-link"> Contact </a></li>
+          <hr class ="line">
+        </ul>
+   </div>
 
     <section class="head">
       
@@ -83,7 +93,7 @@
       </div>
     </section>
 
-    <section class="worksection">
+    <section class="worksection" id ="work-link">
       <div class="desktopproject1">
       <div id="worksectionheader">
         <h2 id="worksectionheading">My Recent Works</h2>
@@ -295,7 +305,7 @@
       </div>
       </div>
     </section>
-    <section class="aboutsection">
+    <section class="aboutsection" id="about-link">
       <div class="about">
         
         <h2 class="aboutheader">About me</h2>
@@ -349,7 +359,7 @@
      
     </section>
 
-    <section class="contact-form">
+    <section class="contact-form" id = "contact-link">
       <p>
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.
@@ -391,5 +401,8 @@
       </ul>
       <div class="liner"></div>
     </footer>
+
+
+    <script src="script.js"></script>
   </body>
 </html>
