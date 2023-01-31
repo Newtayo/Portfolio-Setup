@@ -33,6 +33,11 @@ header {
   left: 0%;
   top: 0%;
 }
+
+.immage.active{
+  content: url("image/Icon\ -\ Cancel.png");
+
+}
 button.dropdown.active {
   position: fixed;
   z-index: 5;
