@@ -38,7 +38,103 @@ header {
 .immage.active {
   content: url("image/Icon\ -\ Cancel.png");
 }
+.popclass{
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+ 
+ background-color: #FFFFFF;;
+ display: flex;
+ flex-direction: column;
+ width: 90vw;
+ height: 105vh;
+ margin:  5%;
+ padding: 5%;
+ overflow:scroll;
+ 
+  
+}
 
+   .img{
+  margin-top: 3%;
+ 
+  padding: 3.5%;
+  background-color: #ff6b00;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  border: none;
+  width: 38vw;
+  
+}
+.popupLanguage .languageitem{
+  color: #3C3A39;
+  width: auto;
+  padding: 5%;
+  font-size: 3.5vw;
+  white-space: nowrap;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 4vw;
+line-height: 16px;
+ 
+}
+ .popupLanguage{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  list-style: none;
+  gap: 3%;
+  width: 100%;
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+.popupLanguage{
+  width: 80vw;
+}
+.popButton{
+  display: flex;
+  justify-content: space-between;
+}
+
+#remove{
+  border: none;
+  right: 10%;
+  position: fixed;
+  width: 10%;
+  background-color: transparent;
+}
+
+.popprojectsupporttext1{
+  width: 100%;
+  font-weight: 400;
+  font-size: 4vw;
+  line-height: 24px;
+  color: #344563;
+  text-align: justify;
+  margin-top: 5%;
+}
+.popimg{
+  margin-left: 10%;
+}
+
+.popupHeader{
+
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 2rem;
+line-height: 2.75rem;
+}
 button.dropdown.active {
   position: fixed;
   z-index: 5;
@@ -83,9 +179,7 @@ button.dropdown.active {
   flex-direction: row;
 }
 
-.desktopitem {
-  display: none;
-}
+
 
 .dropdown {
   background: transparent;
@@ -132,6 +226,9 @@ button.dropdown.active {
   background: #3c3a39;
   padding: auto auto;
   margin: auto 0;
+}
+.desktopitemheader{
+  display: none;
 }
 
 .primary {
@@ -330,13 +427,14 @@ hr {
   flex-direction: row;
   align-items: center;
   border: 1px solid #8993a4;
-  width: 14vw;
+  /* width: 14vw; */
   height: 100%;
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
   padding: 10%;
   justify-content: center;
+  grid-row: 1;
 }
 
 #bootstrap {
@@ -399,8 +497,8 @@ hr {
   display: grid;
   grid-template-columns: auto auto auto;
   list-style: none;
-  gap: 1%;
-  width: 80%;
+  gap: 4%;
+  width: 70%;
   height: 10vh;
   margin: 1.5vh auto 0 5vw;
   align-items: center;
@@ -427,7 +525,7 @@ hr {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 14vw;
+  
   height: 5vh;
   justify-content: center;
   color: white;
@@ -685,11 +783,18 @@ textarea {
   }
 
   .desktopitem {
-    flex: 0.8;
+    width: 100vw;
     display: flex;
+    padding: 5%;
+    
+    flex-wrap: wrap;
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
+    
+  }
+  .seeproject2{
+    width: 100%;
   }
 
   .item {
@@ -824,9 +929,10 @@ textarea {
   #project1 {
     display: flex;
     flex-direction: row;
-    margin: 0;
-    padding: 0;
+   
+    padding: 10%;
     width: 100%;
+   
   }
 
   .text {
@@ -885,10 +991,14 @@ textarea {
     width: 80%;
   }
 
+  .mobileMenu{
+    display: none;
+  }
+
   .languageitem {
     padding: 2.5%;
     margin: 0;
-    width: 10%;
+    
     height: 100%;
     color: #091e42;
     font-size: 1.3vw;
@@ -905,23 +1015,62 @@ textarea {
     margin: 0;
   }
 
-  .desktopotherproject {
+  .otherproject {
     display: flex;
-    flex-wrap: wrap;
-    width: 80%;
+    flex-direction: column;
+    width: 30%;
     margin: 1% auto 10% auto;
     gap: 2%;
+    
   }
-
-  .mobileotherproject {
-    display: none;
-  }
+  .otherprojectheading {
+    width: 90%;
+    color: #fff;
+    font-weight: 400;
+    font-size: 3vw;
+    line-height: 44px;
+    padding-bottom: 3%;
+    margin-top: 20%;
+    height: 20%;
+    
+}
+.project2language {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  list-style: none;
+  gap: 4%;
+  width: 70%;
+  height: 10vh;
+  padding-left: 5%;
+  align-items: center;
+}
+.otherprojecttext {
+  width: 90%;
+    color: #fff;
+    font-weight: 150;
+    font-size: 1.3vw;
+    line-height: 24px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+}
+ 
 
   .projectdesktop {
     width: 30%;
     padding: 0;
     margin: 0;
   }
+  #project2language {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    list-style: none;
+    gap: 4%;
+    width: 70%;
+    height: 10vh;
+    margin: 1.5vh auto 0 5%;
+    align-items: center;
+}
+
 
   .container {
     height: 85%;
@@ -932,7 +1081,7 @@ textarea {
     background-position: center;
   }
 
-  .seeproject21 {
+  .seeproject2 {
     height: 15%;
     margin: 0;
     width: 100%;
@@ -1018,6 +1167,13 @@ textarea {
     padding-bottom: 5%;
     font-size: 2.6vw;
   }
+  .desktopitemheader{
+    flex: 0.8;
+    display: flex;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
 
   .dashboardtext.web {
     padding-bottom: 2.5%;
@@ -1077,9 +1233,7 @@ textarea {
     font-size: 1.5vw;
   }
 
-  .otherproject {
-    display: none;
-  }
+ 
 
   .holder {
     display: flex;
@@ -1094,6 +1248,8 @@ textarea {
     margin: 0;
   }
 
+
+  
   .lang {
     width: 10%;
     font-size: 3vw;
