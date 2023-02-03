@@ -771,19 +771,18 @@ textarea {
   margin-left: 3%;
   text-decoration: none;
   color: white;
-  
 }
 
-.backdrop{
-  position: fixed; 
-  background-color: rgba(0,0,0,0.8);
+.backdrop {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
   top: 0;
   left: 0;
   right: 0;
   height: 100%;
   width: 100%;
   margin: auto;
-  z-index: 1;  
+  z-index: 1;
 }
 
 @media only screen and (min-width: 768px) {

@@ -1,21 +1,19 @@
-const dropDown = document.querySelector('.dropdown')
-const mobileMenu = document.querySelector('.mobileMenu')
-const Popup = document.getElementById('work-link')
+const dropDown = document.querySelector('.dropdown');
+const mobileMenu = document.querySelector('.mobileMenu');
+const Popup = document.getElementById('work-link');
 
-const immage = document.querySelector('.immage')
+const immage = document.querySelector('.immage');
 dropDown.addEventListener('click', () => {
-  dropDown.classList.toggle('active')
-  mobileMenu.classList.toggle('active')
-  immage.classList.toggle('active')
-})
+  dropDown.classList.toggle('active');
+  mobileMenu.classList.toggle('active');
+  immage.classList.toggle('active');
+});
 
-document.querySelectorAll('.menu-items').forEach((i) =>
-  i.addEventListener('click', () => {
-    dropDown.classList.remove('active')
-    mobileMenu.classList.remove('active')
-    immage.classList.remove('active')
-  })
-)
+document.querySelectorAll('.menu-items').forEach((i) => i.addEventListener('click', () => {
+  dropDown.classList.remove('active');
+  mobileMenu.classList.remove('active');
+  immage.classList.remove('active');
+}));
 // Project one card information stored in an object
 const project1Card = {
   title: 'Multi-Post Stories',
@@ -24,7 +22,7 @@ const project1Card = {
   image: 'image/tenyears.png',
   seelive: 'https://newtayo.github.io/Portfolio-Setup/',
   seeSource: 'https://github.com/Newtayo/Portfolio-Setup',
-}
+};
 // Object containing contents in the mobile version
 const mobileothercontent = [
   {
@@ -81,11 +79,11 @@ const mobileothercontent = [
     seelive: 'https://newtayo.github.io/Portfolio-Setup/',
     seeSource: 'https://github.com/Newtayo/Portfolio-Setup',
   },
-]
+];
 
 // Loading the First cards dynamically
-const FirstProject = document.createElement('div')
-FirstProject.id = 'project1'
+const FirstProject = document.createElement('div');
+FirstProject.id = 'project1';
 FirstProject.innerHTML = `<img id="placeholder" src="image/Img Placeholder.png" />
 <div class="project1container">
         <h2 id="project1text">${project1Card.title}</h2>
@@ -94,23 +92,23 @@ FirstProject.innerHTML = `<img id="placeholder" src="image/Img Placeholder.png" 
         
         <ul id="project1language">
         ${project1Card.technology
-          .map((iterate) => `<li class="languageitem">${iterate}</li>`)
-          .join('')}
+    .map((iterate) => `<li class="languageitem">${iterate}</li>`)
+    .join('')}
         </ul>
         <button class="seeproject1" type="button" >See Project</button>
       </div>
       </div>
-`
-Popup.append(FirstProject)
+`;
+Popup.append(FirstProject);
 
-const seeprojectBtn = document.querySelector('.seeproject1')
+const seeprojectBtn = document.querySelector('.seeproject1');
 seeprojectBtn.addEventListener('click', () => {
-  const backdrop = document.createElement('div')
-  backdrop.className = 'backdrop'
+  const backdrop = document.createElement('div');
+  backdrop.className = 'backdrop';
 
-  const popWindow = document.createElement('div')
+  const popWindow = document.createElement('div');
 
-  popWindow.className = 'popclass'
+  popWindow.className = 'popclass';
 
   popWindow.innerHTML = ` <h2 class ="popupHeader">${project1Card.title} </h2>
 <button id= "remove"> <img src="image/Icon - Cancel.png"/> </button>
@@ -133,23 +131,23 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     </div>
     </div>
     </div>
-    `
-  backdrop.append(popWindow)
-  Popup.append(backdrop)
+    `;
+  backdrop.append(popWindow);
+  Popup.append(backdrop);
 
-  const removeBtn = document.getElementById('remove')
+  const removeBtn = document.getElementById('remove');
   removeBtn.addEventListener('click', () => {
-    Popup.removeChild(backdrop)
-  })
-})
+    Popup.removeChild(backdrop);
+  });
+});
 
 // Code for generating the projectcard
-const container = document.createElement('div')
-container.className = 'desktopitem'
+const container = document.createElement('div');
+container.className = 'desktopitem';
 mobileothercontent.forEach((mobile) => {
-  const mobilecontent = document.createElement('div')
+  const mobilecontent = document.createElement('div');
 
-  mobilecontent.className = 'otherproject'
+  mobilecontent.className = 'otherproject';
 
   mobilecontent.innerHTML = `
 <h2 class="otherprojectheading">${mobile.title}</h2>
@@ -158,33 +156,33 @@ mobileothercontent.forEach((mobile) => {
 
 <ul id="project2language">
 ${mobile.technology
-  .map((items) => `<li class="language2item">${items}</li>`)
-  .join('')}
+    .map((items) => `<li class="language2item">${items}</li>`)
+    .join('')}
 </ul>
 
 <button class="seeproject2" type="button" id ="${
-    mobile.sn
-  }">See Project</button>
+  mobile.sn
+}">See Project</button>
 
 </div>
-</div>`
-  mobilecontent.style.backgroundImage = `url(${mobile.image})`
-  container.append(mobilecontent)
+</div>`;
+  mobilecontent.style.backgroundImage = `url(${mobile.image})`;
+  container.append(mobilecontent);
 
-  Popup.append(container)
-})
+  Popup.append(container);
+});
 
 //
 
 //  Handiling Popup
 
 function windowpopup(data) {
-  const backdrop = document.createElement('div')
-  backdrop.className = 'backdrop'
+  const backdrop = document.createElement('div');
+  backdrop.className = 'backdrop';
 
-  const popWindow = document.createElement('div')
+  const popWindow = document.createElement('div');
 
-  popWindow.className = 'popclass'
+  popWindow.className = 'popclass';
 
   popWindow.innerHTML = ` <h2 class ="popupHeader">${data.title} </h2>
   <button id= "remove"> <img src="image/Icon - Cancel.png"/> </button>
@@ -207,18 +205,18 @@ function windowpopup(data) {
       </div>
       </div>
       </div>
-      `
-  backdrop.append(popWindow)
-  Popup.append(backdrop)
+      `;
+  backdrop.append(popWindow);
+  Popup.append(backdrop);
 
-  const removeBtn = document.getElementById('remove')
+  const removeBtn = document.getElementById('remove');
   removeBtn.addEventListener('click', () => {
-    Popup.removeChild(backdrop)
-  })
+    Popup.removeChild(backdrop);
+  });
 }
 
 mobileothercontent.forEach((values, val) => {
   document.getElementById(val).addEventListener('click', () => {
-    windowpopup(values)
-  })
-})
+    windowpopup(values);
+  });
+});
