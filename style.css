@@ -36,7 +36,7 @@ header {
 }
 
 .immage.active {
-  content: url("image/Icon\ -\ Cancel.png");
+  content: url('image/Icon\ -\ Cancel.png');
 }
 
 .languageitem {
@@ -342,9 +342,10 @@ h3 {
   text-align: left;
   color: #fff;
 }
-.error{
+.error {
   color: red;
   display: flex;
+  margin-left: 5%;
 }
 .worksection {
   width: 100vw;
@@ -768,7 +769,7 @@ textarea {
   border: none;
   background: #ff6b00;
 }
-small{
+small {
   display: none;
 }
 
@@ -790,7 +791,7 @@ small{
   margin: auto;
   z-index: 1;
 }
-.error{
+.error {
   color: red;
 }
 
@@ -1036,7 +1037,7 @@ small{
     margin: 1% auto 10% auto;
     gap: 2%;
   }
-  small{
+  small {
     display: none;
   }
 
@@ -1399,7 +1400,7 @@ small{
     line-height: 30px;
     color: #344563;
     text-align: justify;
-    font-family: 'Inter'sans-serif;
+    font-family: 'Inter' sans-serif;
     font-style: normal;
     font-weight: 400;
   }
@@ -1429,8 +1430,9 @@ small{
     display: flex;
     align-items: center;
   }
-  .error{
+  .error {
     color: red;
+    margin-left: 5%;
     display: flex;
   }
 }
