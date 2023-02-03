@@ -173,6 +173,8 @@
         class="form_details"
         action="https://formspree.io/f/xoqzvwya"
         method="POST"
+        id = "contact"
+        
       >
         <input
           type="text"
@@ -182,8 +184,8 @@
           required
         />
 
-        <input type="email" name="email" placeholder="Email address" required />
-
+        <input type="email" name="email" id="email" placeholder="Email address" required />
+          <small> Invalid email address, please note emails are to be in lowercase</small>
         <textarea
           name="message"
           cols="30"
