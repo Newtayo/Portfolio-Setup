@@ -203,6 +203,7 @@ function windowpopup(data) {
       `;
 
   Popup.append(popWindow);
+  
   const removeBtn = document.getElementById('remove');
   removeBtn.addEventListener('click', () => {
     Popup.removeChild(popWindow);

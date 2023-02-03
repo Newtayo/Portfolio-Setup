@@ -424,6 +424,7 @@ hr {
   font-size: 14px;
   line-height: 24px;
   color: #091e42;
+  margin-bottom: 3%;
 }
 
 #project1language {
@@ -486,7 +487,7 @@ hr {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 5.2vw;
+  font-size: 4vw;
   line-height: 24px;
   letter-spacing: 0.03em;
 }
@@ -768,6 +769,9 @@ textarea {
 .img > a {
   margin-top: 5%;
   margin-left: 3%;
+  text-decoration: none;
+  color: white;
+  
 }
 
 @media only screen and (min-width: 768px) {
