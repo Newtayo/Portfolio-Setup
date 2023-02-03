@@ -38,28 +38,39 @@ header {
 .immage.active {
   content: url("image/Icon\ -\ Cancel.png");
 }
-.popclass{
+
+.languageitem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #8993a4;
+  height: 100%;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10%;
+  justify-content: center;
+  grid-row: 1;
+}
+
+.popclass {
   top: 0;
   bottom: 0;
   position: fixed;
   right: 0;
   left: 0;
- 
- background-color: #FFFFFF;;
- display: flex;
- flex-direction: column;
- width: 90vw;
- height: 105vh;
- margin:  5%;
- padding: 5%;
- overflow:scroll;
- 
-  
+  height: auto;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin: 5%;
+  padding: 5%;
+  overflow: scroll;
 }
 
-   .img{
+.img {
   margin-top: 3%;
- 
   padding: 3.5%;
   background-color: #ff6b00;
   white-space: nowrap;
@@ -74,39 +85,45 @@ header {
   color: #fff;
   border: none;
   width: 38vw;
-  
 }
-.popupLanguage .languageitem{
-  color: #3C3A39;
+
+.popupLanguage .languageitem {
+  color: #3c3a39;
   width: auto;
-  padding: 5%;
-  font-size: 3.5vw;
+  padding: 4%;
   white-space: nowrap;
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 4vw;
-line-height: 16px;
- 
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4vw;
+  line-height: 16px;
+  margin-right: 2.5%;
 }
- .popupLanguage{
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  list-style: none;
-  gap: 3%;
-  width: 100%;
+
+.popuptextimagemenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.popupLanguage {
+  width: 60vw;
   margin-top: 8%;
   margin-bottom: 8%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.popupLanguage{
-  width: 80vw;
+
+.popuptextbuttonmenu {
+  display: flex;
+  flex-direction: column;
 }
-.popButton{
+
+.popButton {
   display: flex;
   justify-content: space-between;
 }
 
-#remove{
+#remove {
   border: none;
   right: 10%;
   position: fixed;
@@ -114,7 +131,7 @@ line-height: 16px;
   background-color: transparent;
 }
 
-.popprojectsupporttext1{
+.popprojectsupporttext1 {
   width: 100%;
   font-weight: 400;
   font-size: 4vw;
@@ -123,18 +140,14 @@ line-height: 16px;
   text-align: justify;
   margin-top: 5%;
 }
-.popimg{
-  margin-left: 10%;
+
+.popupHeader {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 2.75rem;
 }
 
-.popupHeader{
-
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 2rem;
-line-height: 2.75rem;
-}
 button.dropdown.active {
   position: fixed;
   z-index: 5;
@@ -178,8 +191,6 @@ button.dropdown.active {
   display: flex;
   flex-direction: row;
 }
-
-
 
 .dropdown {
   background: transparent;
@@ -227,7 +238,8 @@ button.dropdown.active {
   padding: auto auto;
   margin: auto 0;
 }
-.desktopitemheader{
+
+.desktopitemheader {
   display: none;
 }
 
@@ -422,21 +434,6 @@ hr {
   width: 70%;
 }
 
-.languageitem {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border: 1px solid #8993a4;
-  /* width: 14vw; */
-  height: 100%;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 20px;
-  padding: 10%;
-  justify-content: center;
-  grid-row: 1;
-}
-
 #bootstrap {
   width: 24vw;
 }
@@ -486,9 +483,10 @@ hr {
   height: 20vh;
   margin: 2vh auto 0 auto;
   color: #fff;
-  font-family: 'Crete Round', serif;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 5.2vw;
   line-height: 24px;
   letter-spacing: 0.03em;
 }
@@ -525,7 +523,6 @@ hr {
   display: flex;
   flex-direction: row;
   align-items: center;
-  
   height: 5vh;
   justify-content: center;
   color: white;
@@ -721,11 +718,6 @@ button:active {
   background: #e05304;
 }
 
-button:disabled {
-  background: #f4f1f0;
-  color: #5b5957;
-}
-
 .contact-form p {
   font-family: 'Inter', serif;
   font-style: normal;
@@ -773,6 +765,11 @@ textarea {
   background: #ff6b00;
 }
 
+.img > a {
+  margin-top: 5%;
+  margin-left: 3%;
+}
+
 @media only screen and (min-width: 768px) {
   .union {
     display: none;
@@ -786,15 +783,10 @@ textarea {
     width: 100vw;
     display: flex;
     padding: 5%;
-    
     flex-wrap: wrap;
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
-    
-  }
-  .seeproject2{
-    width: 100%;
   }
 
   .item {
@@ -894,7 +886,7 @@ textarea {
   .desktopproject1 {
     height: fit-content;
     width: 80%;
-    margin: 5% auto 5% auto;
+    margin: 5% auto 0 auto;
   }
 
   #worksectionheader {
@@ -929,10 +921,8 @@ textarea {
   #project1 {
     display: flex;
     flex-direction: row;
-   
-    padding: 10%;
+    padding: 1% 10% 10% 10%;
     width: 100%;
-   
   }
 
   .text {
@@ -979,7 +969,8 @@ textarea {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     color: #091e42;
-    font-weight: 600;
+    font-weight: 400;
+    margin-bottom: 5%;
   }
 
   #project1text {
@@ -991,14 +982,13 @@ textarea {
     width: 80%;
   }
 
-  .mobileMenu{
+  .mobileMenu {
     display: none;
   }
 
   .languageitem {
     padding: 2.5%;
     margin: 0;
-    
     height: 100%;
     color: #091e42;
     font-size: 1.3vw;
@@ -1021,8 +1011,8 @@ textarea {
     width: 30%;
     margin: 1% auto 10% auto;
     gap: 2%;
-    
   }
+
   .otherprojectheading {
     width: 90%;
     color: #fff;
@@ -1032,34 +1022,35 @@ textarea {
     padding-bottom: 3%;
     margin-top: 20%;
     height: 20%;
-    
-}
-.project2language {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  list-style: none;
-  gap: 4%;
-  width: 70%;
-  height: 10vh;
-  padding-left: 5%;
-  align-items: center;
-}
-.otherprojecttext {
-  width: 90%;
+  }
+
+  .project2language {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    list-style: none;
+    gap: 4%;
+    width: 70%;
+    height: 10vh;
+    padding-left: 5%;
+    align-items: center;
+  }
+
+  .otherprojecttext {
+    width: 90%;
     color: #fff;
     font-weight: 150;
     font-size: 1.3vw;
     line-height: 24px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
-}
- 
+  }
 
   .projectdesktop {
     width: 30%;
     padding: 0;
     margin: 0;
   }
+
   #project2language {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -1069,8 +1060,7 @@ textarea {
     height: 10vh;
     margin: 1.5vh auto 0 5%;
     align-items: center;
-}
-
+  }
 
   .container {
     height: 85%;
@@ -1167,7 +1157,8 @@ textarea {
     padding-bottom: 5%;
     font-size: 2.6vw;
   }
-  .desktopitemheader{
+
+  .desktopitemheader {
     flex: 0.8;
     display: flex;
     font-weight: 600;
@@ -1233,8 +1224,6 @@ textarea {
     font-size: 1.5vw;
   }
 
- 
-
   .holder {
     display: flex;
     flex-direction: column;
@@ -1248,8 +1237,6 @@ textarea {
     margin: 0;
   }
 
-
-  
   .lang {
     width: 10%;
     font-size: 3vw;
@@ -1306,5 +1293,113 @@ textarea {
     padding-bottom: 2%;
     font-family: 'Inter', sans-serif;
     font-style: normal;
+  }
+
+  .popclass {
+    display: flex;
+    width: 80vw;
+    height: 90vh;
+    margin: auto auto;
+    padding: 2%;
+  }
+
+  .popupHeader {
+    width: 70%;
+    font-family: 'Crete Round', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5vw;
+    line-height: 44px;
+  }
+
+  .popupLanguage .languageitem {
+    color: #3c3a39;
+    width: auto;
+    padding: 4%;
+    white-space: nowrap;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4vw;
+    line-height: 16px;
+    margin-right: 2.5%;
+  }
+
+  .popuptextimagemenu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    height: 90%;
+  }
+
+  .popuptextimagemenu #imagepop {
+    height: 80vh;
+  }
+
+  .popclass #placeholder {
+    grid-column: 1/5;
+    grid-row: 2/6;
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+    height: auto;
+  }
+
+  .popupLanguage {
+    display: flex;
+    width: 30%;
+    margin-top: 1%;
+    padding-top: 1%;
+    margin-bottom: 2%;
+    padding-bottom: 0%;
+  }
+
+  .popuptextbuttonmenu {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding-left: 2%;
+  }
+
+  .popprojectsupporttext1 {
+    height: 70%;
+    white-space: wrap;
+    width: 100%;
+    margin-top: 1%;
+    flex: 3;
+    font-size: 1.2vw;
+    line-height: 30px;
+    color: #344563;
+    text-align: justify;
+    font-family: 'Inter'sans-serif;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .popButton {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .popimg {
+    margin-left: 6%;
+  }
+
+  .img {
+    font-size: 1vw;
+  }
+
+  .popButton .img {
+    width: 45%;
+  }
+
+  .img > a {
+    color: white;
+    font-size: 1.3vw;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
   }
 }
