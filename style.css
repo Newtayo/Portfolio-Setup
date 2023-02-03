@@ -342,7 +342,10 @@ h3 {
   text-align: left;
   color: #fff;
 }
-
+.error{
+  color: red;
+  display: flex;
+}
 .worksection {
   width: 100vw;
   height: 600%;
@@ -765,6 +768,9 @@ textarea {
   border: none;
   background: #ff6b00;
 }
+small{
+  display: none;
+}
 
 .img > a {
   margin-top: 5%;
@@ -783,6 +789,9 @@ textarea {
   width: 100%;
   margin: auto;
   z-index: 1;
+}
+.error{
+  color: red;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1026,6 +1035,9 @@ textarea {
     width: 30%;
     margin: 1% auto 10% auto;
     gap: 2%;
+  }
+  small{
+    display: none;
   }
 
   .otherprojectheading {
@@ -1416,5 +1428,9 @@ textarea {
     text-decoration: none;
     display: flex;
     align-items: center;
+  }
+  .error{
+    color: red;
+    display: flex;
   }
 }
