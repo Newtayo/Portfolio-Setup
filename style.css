@@ -342,11 +342,13 @@ h3 {
   text-align: left;
   color: #fff;
 }
+
 .error {
   color: red;
   display: flex;
   margin-left: 8%;
 }
+
 .worksection {
   width: 100vw;
   height: 600%;
@@ -769,6 +771,7 @@ textarea {
   border: none;
   background: #ff6b00;
 }
+
 small {
   display: none;
 }
@@ -790,9 +793,6 @@ small {
   width: 100%;
   margin: auto;
   z-index: 1;
-}
-.error {
-  color: red;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1037,6 +1037,7 @@ small {
     margin: 1% auto 10% auto;
     gap: 2%;
   }
+
   small {
     display: none;
   }
@@ -1400,7 +1401,7 @@ small {
     line-height: 30px;
     color: #344563;
     text-align: justify;
-    font-family: 'Inter' sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
   }
@@ -1430,6 +1431,7 @@ small {
     display: flex;
     align-items: center;
   }
+
   .error {
     color: red;
     margin-left: 5%;

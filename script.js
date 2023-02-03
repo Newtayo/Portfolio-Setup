@@ -221,7 +221,7 @@ mobileothercontent.forEach((values, val) => {
   });
 });
 
-//Email Validation
+// Email Validation
 const form = document.getElementById('contact');
 const emailValue = form.elements.email;
 const errorMessage = document.querySelector('small');
@@ -230,6 +230,6 @@ form.addEventListener('submit', (event) => {
   const email = emailValue.value;
   if (email !== email.toLowerCase()) {
     event.preventDefault();
-    errorMessage.className="error";
+    errorMessage.className = 'error';
   }
 });
