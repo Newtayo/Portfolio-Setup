@@ -233,3 +233,41 @@ form.addEventListener('submit', (event) => {
     errorMessage.className = 'error';
   }
 });
+
+// Handling local storage
+
+const userName = form.elements.Fullname;
+const userEmail = form.elements.email;
+const userMessage = form.elements.YourMessage;
+
+function storingInput() {
+  // storing user input in object
+  const userObject = {
+    name: userName.value,
+    email: userEmail.value,
+    message: userMessage.value,
+  };
+  localStorage.setItem('userObject', JSON.stringify(userObject));
+}
+
+function prePopulateForm() {
+  const storedValues = JSON.parse(localStorage.getItem('userObject'));
+  const currentUser = storedValues.name;
+  const currentEmail = storedValues.email;
+  const currentMessage = storedValues.message;
+  form.elements.Fullname.value = currentUser;
+  form.elements.email.value = currentEmail;
+  form.elements.YourMessage.value = currentMessage;
+}
+
+if (!localStorage.getItem('userObject')) {
+  storingInput();
+} else {
+  prePopulateForm();
+}
+
+//  if form values are changed
+
+userName.onchange = storingInput;
+userEmail.onchange = storingInput;
+userMessage.onchange = storingInput;
