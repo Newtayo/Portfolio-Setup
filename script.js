@@ -16,12 +16,13 @@ document.querySelectorAll('.menu-items').forEach((i) => i.addEventListener('clic
 }));
 // Project one card information stored in an object
 const project1Card = {
-  title: 'Multi-Post Stories',
-  text: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-  technology: ['css', 'html', 'bootstrap', 'Ruby'],
-  image: 'image/tenyears.png',
-  seelive: 'https://newtayo.github.io/Portfolio-Setup/',
-  seeSource: 'https://github.com/Newtayo/Portfolio-Setup',
+  title: 'Clean Energy Submit 2023',
+  text: 'This is a responsive website created for the National Renweable Energy Submit. It provides information about the submit keyspeakers and also partnering companies.',
+  technology: ['css', 'html', 'Javascript'],
+  image: 'image/vlean.jpg',
+  PopImage: 'image/vlean.jpg',
+  seelive: 'https://newtayo.github.io/Clean-Energy-Submit/',
+  seeSource: 'https://github.com/Newtayo/Clean-Energy-Submit',
 };
 // Object containing contents in the mobile version
 const mobileothercontent = [
@@ -84,7 +85,7 @@ const mobileothercontent = [
 // Loading the First cards dynamically
 const FirstProject = document.createElement('div');
 FirstProject.id = 'project1';
-FirstProject.innerHTML = `<img id="placeholder" src="image/Img Placeholder.png" />
+FirstProject.innerHTML = `<img id="placeholder" src="image/vlean.jpg" />
 <div class="project1container">
         <h2 id="project1text">${project1Card.title}</h2>
         <p id="project1supporttext">${project1Card.text}
@@ -115,15 +116,15 @@ seeprojectBtn.addEventListener('click', () => {
 
 <ul  class = "popupLanguage">
 <li class="languageitem">html</li>
-<li class="languageitem">Bootstrap</li>
+<li class="languageitem">CSS</li>
 
-<li class="languageitem">Ruby on the rails</li>
+<li class="languageitem">Javascript</li>
 </ul>
 <div class ="popuptextimagemenu">
 <img id="placeholder"  src="${project1Card.image}" />
 <div class ="popuptextbuttonmenu">
 <p class="popprojectsupporttext1">
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.
+National Renewable Energy Submit 2023 is an annual event that gathers professionals in the reneweable energy field from all over the world. It provides the platforms for professionals to showcase latest technology in the field and also a medium to source for private and government support. This year’s event is billed to have in attendance notable personalities in the industry as well as artists who are using their voices to promote the industry. .
     </p>
     <div class="popButton">
     <button class=" img" type="button"><a href ="${project1Card.seelive}">See Live <img class = "popimg" src= "image/Icon.png"></a></button>
