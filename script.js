@@ -27,49 +27,59 @@ const project1Card = {
 // Object containing contents in the mobile version
 const mobileothercontent = [
   {
-    title: 'Data Dashboard Healthcare',
-    text: ' A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    technology: ['html', 'bootstrap', 'Ruby'],
+    title: 'World Population App',
+    text: ' With world population App, you can have basic information of the various countries in the world with just a single click',
+    description:'According to the restcountries API, there are over 7.7 billion people and around 250 countries in the World. With world population App, you can have basic information of the various countries in the world with just a single click',
+    technology: ['React', 'Redux', 'Vanilla Css'],
     image: 'image/Website.png',
     sn: 0,
-    seelive: 'https://newtayo.github.io/Portfolio-Setup/',
-    seeSource: 'https://github.com/Newtayo/Portfolio-Setup',
+    picture:'image/WorldPopulatio.jpg',
+    seelive: 'https://countriespopulation.onrender.com/',
+    seeSource: 'https://github.com/Newtayo/metric-webapp',
   },
   {
-    title: 'Website Protfolio ',
-    text: ' A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    technology: ['html', 'bootstrap', 'Ruby'],
+    title: 'Todo-List App',
+    text: ' Todo-List app is created to help users properly plan their daily itenary. Tasks can be planned and track using this app. It also ensures that all changes made to the tasks are updated in real-time and preserved.',
+    description:'One of the ways to better manage Time and increase productivity is through Planning. Todo-List app is created just for this purpose. Tasks can be planned and track using this app. It also ensures that all changes made to the tasks are updated in real time and preserved',
+    technology: ['Javascript', 'Html', 'CSS'],
     image: 'image/Calculator.png',
     sn: 1,
-    seelive: 'https://newtayo.github.io/Portfolio-Setup/',
-    seeSource: 'https://github.com/Newtayo/Portfolio-Setup',
+    picture:'image/Todo.jpg',
+    seelive: 'https://newtayo.github.io/TODO-LIST/dist/',
+    seeSource: 'https://github.com/Newtayo/TODO-LIST',
   },
   {
-    title: 'Profesional Art Printing Data',
-    text: ' A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    technology: ['html', 'bootstrap', 'Ruby'],
+    title: 'Book Store',
+    text: 'This application helps keeps track of the books in a user library. The user can add or remove books from the library',
+    technology: ['React', 'Redux', 'CSS'],
+    description:'This application helps keeps track of the books in a user library. The user can add or remove books from the library. The user booklist is preserved on an API',
     image: 'image/View.png',
+    picture:'image/Bookstore.jpg',
     sn: 2,
-    seelive: 'https://newtayo.github.io/Portfolio-Setup/',
-    seeSource: 'https://github.com/Newtayo/Portfolio-Setup',
+    seelive: 'https://booklibrary-mmen.onrender.com/',
+    seeSource: 'https://github.com/Newtayo/Bookstore',
   },
   {
-    title: 'Data Dashboard Healthcare',
-    text: ' A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    technology: ['html', 'bootstrap', 'Ruby'],
+    title: 'Leaderboard',
+    text: ' This is mobile responsive SPA website that displays the scores of participants in a game. Individuals can add scores to the leader board filling the add score form.',
+    description:'This is mobile responsive SPA website that displays the scores of participants in a game. Individuals can add scores to the leader board filling the add score form. All scores are preserved in using API',
+    technology: ['html', 'Javascript', 'Css'],
     image: 'image/Website.png',
+    picture:'image/tenyears.png',
     sn: 3,
-    seelive: 'https://newtayo.github.io/Portfolio-Setup/',
-    seeSource: 'https://github.com/Newtayo/Portfolio-Setup',
+    seelive: 'https://newtayo.github.io/Leaderboard/dist/',
+    seeSource: 'https://github.com/Newtayo/Leaderboard',
   },
   {
-    title: 'Website Protfolio',
-    text: ' A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    technology: ['html', 'bootstrap', 'Ruby'],
+    title: 'Awesome BookStore',
+    text: ' This web app manages the books available at a store called Awesome Books. Books can be added and removed at will. It also utilizes local storage to ensure changes are preserved',
+    description:'This web app manages the books available at a store called Awesome Books. Books can be added and removed at will. It also utilizes local storage to ensure changes are preserved',
+    technology: ['html', 'Javascript', 'CSS'],
+    picture:'image/tenyears.png',
     image: 'image/Calculator.png',
     sn: 4,
-    seelive: 'https://newtayo.github.io/Portfolio-Setup/',
-    seeSource: 'https://github.com/Newtayo/Portfolio-Setup',
+    seelive: 'https://newtayo.github.io/Module-Awesome-Books/main/',
+    seeSource: 'https://github.com/Newtayo/Module-Awesome-Books',
   },
   {
     title: 'Profesional Art Printing Data',
@@ -77,8 +87,8 @@ const mobileothercontent = [
     technology: ['html', 'bootstrap', 'Ruby'],
     image: 'image/View.png',
     sn: 5,
-    seelive: 'https://newtayo.github.io/Portfolio-Setup/',
-    seeSource: 'https://github.com/Newtayo/Portfolio-Setup',
+    seelive: 'https://newtayo.github.io/Leaderboard/dist/',
+    seeSource: 'https://github.com/Newtayo/Leaderboard',
   },
 ];
 
@@ -189,20 +199,20 @@ function windowpopup(data) {
   <button id= "remove"> <img src="image/Icon - Cancel.png"/> </button>
   
   <ul  class = "popupLanguage">
-  <li class="languageitem">html</li>
-  <li class="languageitem">Bootstrap</li>
+  <li class="languageitem">${data.technology[0]}</li>
+  <li class="languageitem">${data.technology[1]}</li>
  
-  <li class="languageitem">Ruby on the rails</li>
+  <li class="languageitem">${data.technology[2]}</li>
 </ul>
 <div class ="popuptextimagemenu">
-  <img id="placeholder" src="image/tenyears.png" />
+  <img id="placeholder" src=${data.picture} />
   <div class ="popuptextbuttonmenu">
   <p class="popprojectsupporttext1">
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
+  ${data.description}
       </p>
       <div class="popButton">
-      <button class=" img" type="button"><a href ="${project1Card.seelive}">See Live <img class = "popimg" src= "image/Icon.png"></a></button>
-      <button class=" img" type="button"><a href ="${project1Card.seeSource}"> See Source <img class = "popimg" src= "image/Vector.png"></a> </button>
+      <button class=" img" type="button"><a href ="${data.seelive}">See Live <img class = "popimg" src= "image/Icon.png"></a></button>
+      <button class=" img" type="button"><a href ="${data.seeSource}"> See Source <img class = "popimg" src= "image/Vector.png"></a> </button>
       </div>
       </div>
       </div>
