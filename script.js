@@ -33,7 +33,7 @@ const mobileothercontent = [
     technology: ['React', 'Redux', 'Vanilla Css'],
     image: 'image/Website.png',
     sn: 0,
-    picture: 'image/population.JPG',
+    picture: 'image/population.jpg',
     seelive: 'https://countriespopulation.onrender.com/',
     seeSource: 'https://github.com/Newtayo/metric-webapp',
   },
