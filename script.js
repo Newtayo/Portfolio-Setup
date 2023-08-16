@@ -33,7 +33,7 @@ const mobileothercontent = [
     technology: ['React', 'Redux', 'Vanilla Css'],
     image: 'image/Website.png',
     sn: 0,
-    picture: 'image/WorldPopulatio.JPG',
+    picture: 'image/population.JPG',
     seelive: 'https://countriespopulation.onrender.com/',
     seeSource: 'https://github.com/Newtayo/metric-webapp',
   },
@@ -54,43 +54,43 @@ const mobileothercontent = [
     technology: ['React', 'Redux', 'CSS'],
     description: 'This application helps keeps track of the books in a user library. The user can add or remove books from the library. The user booklist is preserved on an API',
     image: 'image/View.png',
-    picture: 'image/Bookstore.jpg',
+    picture: 'image/books.jpg',
     sn: 2,
     seelive: 'https://booklibrary-mmen.onrender.com/',
     seeSource: 'https://github.com/Newtayo/Bookstore',
   },
   {
-    title: 'Leaderboard',
-    text: ' This is mobile responsive SPA website that displays the scores of participants in a game. Individuals can add scores to the leader board filling the add score form.',
-    description: 'This is mobile responsive SPA website that displays the scores of participants in a game. Individuals can add scores to the leader board filling the add score form. All scores are preserved in using API',
+    title: 'TV Series App',
+    text: ' This is a SPA web application built to provide users with information of various TV Series.',
+    description: 'This is a SPA web application built to provide users with information of various TV Series. The application allows users to post comments and like movies. The application was built using a free movie api. All changes made are preserved',
     technology: ['html', 'Javascript', 'Css'],
     image: 'image/Website.png',
-    picture: 'image/tenyears.png',
+    picture: 'image/TV.JPG',
     sn: 3,
-    seelive: 'https://newtayo.github.io/Leaderboard/dist/',
-    seeSource: 'https://github.com/Newtayo/Leaderboard',
+    seelive: 'https://veronica365.github.io/JavaScript-Capstone/dist/',
+    seeSource: 'https://github.com/Newtayo/TVmaze-',
   },
   {
-    title: 'Awesome BookStore',
-    text: ' This web app manages the books available at a store called Awesome Books. Books can be added and removed at will. It also utilizes local storage to ensure changes are preserved',
-    description: 'This web app manages the books available at a store called Awesome Books. Books can be added and removed at will. It also utilizes local storage to ensure changes are preserved',
-    technology: ['html', 'Javascript', 'CSS'],
-    picture: 'image/tenyears.png',
+    title: 'BudgetIT App',
+    text: ' BudgetIT App is a responsive application that enables a user group planned expenses into categories. It also provides a means by which such expenses can be tracked ',
+    description: 'BudgetIT App is a full-stack application that enables a user group planned expenses into categories. It also provides a means by which such expenses can be tracked. It was developed using rails and vanilla Css, with postgres as it database',
+    technology: ['Rails', 'CSS', 'Postgres'],
+    picture: 'image/BudgetIT.JPG',
     image: 'image/Calculator.png',
     sn: 4,
-    seelive: 'https://newtayo.github.io/Module-Awesome-Books/main/',
-    seeSource: 'https://github.com/Newtayo/Module-Awesome-Books',
+    seelive: 'https://drive.google.com/file/d/10M8X8yaXTO2c_nXR4fhY4lchCMKo9Bwl/view?usp=sharing',
+    seeSource: 'https://github.com/Newtayo/Budget_app',
   },
   {
-    title: 'Profesional Art Printing Data',
-    text: ' A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    description: ' A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    picture: 'image/tenyears.png',
-    technology: ['html', 'bootstrap', 'Ruby'],
+    title: 'Laptop Rental',
+    text: ' Laptop app is a full-stack app created to assist users in borrowing laptops from a store. It allows laptops to be added and deleted from the store in real time.',
+    description: ' Laptop app is a full-stack app created to assist users in borrowing laptops from a store. It allows laptops to be added and deleted from the store in real time.',
+    picture: 'image/rentallaptop.jpg',
+    technology: ['React', 'Rails', 'Saas'],
     image: 'image/View.png',
     sn: 5,
-    seelive: 'https://newtayo.github.io/Leaderboard/dist/',
-    seeSource: 'https://github.com/Newtayo/Leaderboard',
+    seelive: 'https://laptoprentals.onrender.com',
+    seeSource: 'https://github.com/Harrynoqs/Final-capstone-backend',
   },
 ];
 
@@ -164,7 +164,7 @@ mobileothercontent.forEach((mobile) => {
 
   mobilecontent.innerHTML = `
 <h2 class="otherprojectheading">${mobile.title}</h2>
-<p class="otherprojecttext">${mobile.text}
+<p class="otherprojecttext">${mobile.text.substring(0, 150)}...
  </p>
 
 <ul id="project2language">
